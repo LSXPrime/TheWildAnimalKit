@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4096919317285366616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6300e87c6f42604587d1da148997536, type: 3}
+  m_Name: MeshLightGlobalRenderFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  _renderPassEvent: 550
+  renderInSceneView: 1
+  _laplacianGaussianStandardDeviation: 0.8
+  _laplacianKernelRadius: 4
+  _maxLaplacianWidth: 512
+  _chunkSize: 5
+  _chunksInRadius: 5
+  _maxTesselation: 4
+  _edgeHeight: 512
+  _distanceFactor: 1024
+  _downsampleAmount: 2
+  _patchThreshold: 10
+  _blurGaussianStandardDeviation: 0.8
+  _blurKernelRadius: 4
+  _blurDepthFalloff: 0.01
+  _upsampleDepthThreshold: 0.01
+  _extinctionCoefficient: 0
+  _meiSactteringCoefficient: 0.5
+  _rayleighSactteringCoefficient: 1
+  _maxDepth: 250
+  _fogDensity: 0.5
+  _fogColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  _ambientColor:
+    r: 0.4245283
+    g: 0.4245283
+    b: 0.4245283
+    a: 1
+  _extinctionColor:
+    r: 0.6792453
+    g: 0.6792453
+    b: 0.6792453
+    a: 1
+  _shadowSampleShader: {fileID: 4800000, guid: d99f8c9a55f375d48888e4ee854138ed, type: 3}
+  _lightGlobalMeshShader: {fileID: 4800000, guid: 2429080d6bdabbc4a97011bc1568de9a, type: 3}
+  _atmosphereShader: {fileID: 4800000, guid: eeaa33c1922d76d4288919fc70767b96, type: 3}
+  _smartSampleShader: {fileID: 4800000, guid: 52f99676c7baab44c9067e04a36f8505, type: 3}
+  _compositeShader: {fileID: 4800000, guid: c89587468a37a744ba268dfa86ac3258, type: 3}
+  _shadowSampleMaterial: {fileID: 0}
+  _lightGlobalMeshMaterial: {fileID: 0}
+  _atmosphereMaterial: {fileID: 0}
+  _smartSampleMaterial: {fileID: 0}
+  _compositeMaterial: {fileID: 0}
+  _laplacianCompute: {fileID: 7200000, guid: cf58283517a74fc44b3cb865406add5c, type: 3}
+  _downsampleBufferCompute: {fileID: 7200000, guid: eef780906a9363c499e0c53c715e52e1, type: 3}
+  _lightVolumeCompute: {fileID: 7200000, guid: f38d3508200396d4ea3f410b0cc41c44, type: 3}
+  _patchTextureCompute: {fileID: 7200000, guid: ddaaa406c02801b48a5688d10b00a413, type: 3}
+  _blurCompute: {fileID: 7200000, guid: 71fe009ae90a10d4994c5fc185596139, type: 3}
+  _pipeline: {fileID: 11400000, guid: 7b7fd9122c28c4d15b667c7040e3b3fd, type: 2}
+  _initialized: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
+  m_Name: URP-HighFidelity-Renderer
+  m_EditorClassIdentifier: 
+  debugShaders:
+    debugReplacementPS: {fileID: 4800000, guid: cf852408f2e174538bcd9b7fda1c5ae7, type: 3}
+  m_RendererFeatures: []
+  m_RendererFeatureMap: 
+  m_UseNativeRenderPass: 0
+  postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
+  xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
+  shaders:
+    blitPS: {fileID: 4800000, guid: c17132b1f77d20942aa75f8429c0f8bc, type: 3}
+    copyDepthPS: {fileID: 4800000, guid: d6dae50ee9e1bfa4db75f19f99355220, type: 3}
+    screenSpaceShadowPS: {fileID: 0}
+    samplingPS: {fileID: 4800000, guid: 04c410c9937594faa893a11dceb85f7e, type: 3}
+    stencilDeferredPS: {fileID: 4800000, guid: e9155b26e1bc55942a41e518703fe304, type: 3}
+    fallbackErrorPS: {fileID: 4800000, guid: e6e9a19c3678ded42a3bc431ebef7dbd, type: 3}
+    materialErrorPS: {fileID: 4800000, guid: 5fd9a8feb75a4b5894c241777f519d4e, type: 3}
+    coreBlitPS: {fileID: 4800000, guid: 93446b5c5339d4f00b85c159e1159b7c, type: 3}
+    coreBlitColorAndDepthPS: {fileID: 4800000, guid: d104b2fc1ca6445babb8e90b0758136b, type: 3}
+    cameraMotionVector: {fileID: 4800000, guid: c56b7e0d4c7cb484e959caeeedae9bbf, type: 3}
+    objectMotionVector: {fileID: 4800000, guid: 7b3ede40266cd49a395def176e1bc486, type: 3}
+  m_AssetVersion: 2
+  m_OpaqueLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_TransparentLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_DefaultStencilState:
+    overrideStencilState: 0
+    stencilReference: 0
+    stencilCompareFunction: 8
+    passOperation: 2
+    failOperation: 0
+    zFailOperation: 0
+  m_ShadowTransparentReceive: 1
+  m_RenderingMode: 0
+  m_DepthPrimingMode: 0
+  m_CopyDepthMode: 0
+  m_AccurateGbufferNormals: 0
+  m_ClusteredRendering: 0
+  m_TileSize: 32
+  m_IntermediateTextureMode: 1

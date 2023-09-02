@@ -1,0 +1,873 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06980117106e4142a0f176c8cdc03c1, type: 3}
+  m_Name: GameData
+  m_EditorClassIdentifier: 
+  SecretKey: '@EleazarBloodline'
+  Platform: 0
+  TargetFPS: 360
+  SaveInterval: 240
+  AimAssist: 0
+  AimAssistRadius: 2
+  Items:
+  - {fileID: 11400000, guid: 93871935f02270240833e940b5d39ad9, type: 2}
+  - {fileID: 11400000, guid: b1ce6f13b6b4862499872fd8cc65c9ea, type: 2}
+  - {fileID: 11400000, guid: 02f6ae9ed3d248649821fdf9d22d0b75, type: 2}
+  - {fileID: 11400000, guid: 47029d9fa4f6c8a418f117bf2e2e8ee3, type: 2}
+  - {fileID: 11400000, guid: ca16cf629e65da04ba91200f2be07e34, type: 2}
+  - {fileID: 11400000, guid: 3823eb9f910b2bb42a3860ab3447815b, type: 2}
+  Packs:
+  - Name: Wolves
+    Preview: {fileID: 21300000, guid: f68161298f92c574ba6f73d245e974ce, type: 3}
+    ID: 0
+    isWild: 1
+    ExpPerKill: 40
+    WildnessPerKill: 50
+    PackMaxCount:
+      Min: 1
+      Max: 11
+    Animals:
+    - {fileID: 1932554095190043102, guid: 2c79931fb24b90d4991b72b188bcae58, type: 3}
+    Levels:
+    - Level: 1
+      Health: 50
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 20
+          Max: 30
+        CriticalChance: 10
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 2
+      Health: 100
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 30
+          Max: 40
+        CriticalChance: 5
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 3
+      Health: 150
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 40
+          Max: 45
+        CriticalChance: 6
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 4
+      Health: 200
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 45
+          Max: 50
+        CriticalChance: 7
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 5
+      Health: 250
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 50
+          Max: 55
+        CriticalChance: 8
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 6
+      Health: 300
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 55
+          Max: 60
+        CriticalChance: 10
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+    - Level: 7
+      Health: 350
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 60
+          Max: 65
+        CriticalChance: 15
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+    - Level: 8
+      Health: 400
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 65
+          Max: 70
+        CriticalChance: 20
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 9
+      Health: 450
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 70
+          Max: 75
+        CriticalChance: 25
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 10
+      Health: 500
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 75
+          Max: 80
+        CriticalChance: 30
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    LeaderBehavior: 0
+    PackBehavior: 2
+  - Name: Husky
+    Preview: {fileID: 21300000, guid: 7ad95a00c8c15424c919d6f58b678433, type: 3}
+    ID: 1
+    isWild: 1
+    ExpPerKill: 35
+    WildnessPerKill: 45
+    PackMaxCount:
+      Min: 1
+      Max: 9
+    Animals:
+    - {fileID: 4591447280572126130, guid: 30a90eae78319fd4384608d4e0888454, type: 3}
+    Levels:
+    - Level: 1
+      Health: 50
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 20
+          Max: 30
+        CriticalChance: 10
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 20
+          Max: 30
+        CriticalChance: 10
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 2
+      Health: 100
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 30
+          Max: 40
+        CriticalChance: 5
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 0
+        Damage:
+          Min: 30
+          Max: 40
+        CriticalChance: 5
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 3
+      Health: 150
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 40
+          Max: 45
+        CriticalChance: 6
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 40
+          Max: 45
+        CriticalChance: 6
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 4
+      Health: 200
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 45
+          Max: 50
+        CriticalChance: 7
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 45
+          Max: 50
+        CriticalChance: 7
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 5
+      Health: 250
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 50
+          Max: 55
+        CriticalChance: 8
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 50
+          Max: 55
+        CriticalChance: 8
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 6
+      Health: 300
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 55
+          Max: 60
+        CriticalChance: 10
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 55
+          Max: 60
+        CriticalChance: 10
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+    - Level: 7
+      Health: 350
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 60
+          Max: 65
+        CriticalChance: 15
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 60
+          Max: 65
+        CriticalChance: 15
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+    - Level: 8
+      Health: 400
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 65
+          Max: 70
+        CriticalChance: 20
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 65
+          Max: 70
+        CriticalChance: 20
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 9
+      Health: 450
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 70
+          Max: 75
+        CriticalChance: 25
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 70
+          Max: 75
+        CriticalChance: 25
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 10
+      Health: 500
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 75
+          Max: 80
+        CriticalChance: 30
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+      - AnimationIndex: 1
+        Damage:
+          Min: 75
+          Max: 80
+        CriticalChance: 30
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    LeaderBehavior: 0
+    PackBehavior: 2
+  - Name: Deer
+    Preview: {fileID: 21300000, guid: 8aa0477c12a766042894f1e6213297aa, type: 3}
+    ID: 5
+    isWild: 0
+    ExpPerKill: 15
+    WildnessPerKill: 20
+    PackMaxCount:
+      Min: 1
+      Max: 9
+    Animals:
+    - {fileID: 1875286863606962405, guid: 1129748b8ca27ab489e690804a87cc1c, type: 3}
+    - {fileID: 4884989155600146706, guid: 52e82fa015c4ded4e9d69ec6cb841e3e, type: 3}
+    Levels:
+    - Level: 1
+      Health: 50
+      Attacks: []
+    - Level: 2
+      Health: 100
+      Attacks: []
+    - Level: 3
+      Health: 150
+      Attacks: []
+    - Level: 4
+      Health: 200
+      Attacks: []
+    - Level: 5
+      Health: 225
+      Attacks: []
+    - Level: 6
+      Health: 250
+      Attacks: []
+    - Level: 7
+      Health: 275
+      Attacks: []
+    - Level: 8
+      Health: 300
+      Attacks: []
+    - Level: 9
+      Health: 325
+      Attacks: []
+    - Level: 10
+      Health: 350
+      Attacks: []
+    LeaderBehavior: 3
+    PackBehavior: 3
+  - Name: Bull
+    Preview: {fileID: 21300000, guid: 33f505f2f24de1f47ba4a3033fdf4b43, type: 3}
+    ID: 7
+    isWild: 0
+    ExpPerKill: 25
+    WildnessPerKill: 40
+    PackMaxCount:
+      Min: 2
+      Max: 9
+    Animals:
+    - {fileID: 1757561063643833004, guid: 7175085401a9ab64394232cdb2964062, type: 3}
+    Levels:
+    - Level: 1
+      Health: 50
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 20
+          Max: 30
+        CriticalChance: 10
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 2
+      Health: 100
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 30
+          Max: 40
+        CriticalChance: 5
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 3
+      Health: 150
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 40
+          Max: 45
+        CriticalChance: 6
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 4
+      Health: 200
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 45
+          Max: 50
+        CriticalChance: 7
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 5
+      Health: 250
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 50
+          Max: 55
+        CriticalChance: 8
+        CriticalMultiplier: 2
+        VFXImpact: {fileID: 0}
+    - Level: 6
+      Health: 300
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 55
+          Max: 60
+        CriticalChance: 10
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+    - Level: 7
+      Health: 350
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 60
+          Max: 65
+        CriticalChance: 15
+        CriticalMultiplier: 2.5
+        VFXImpact: {fileID: 0}
+    - Level: 8
+      Health: 400
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 65
+          Max: 70
+        CriticalChance: 20
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 9
+      Health: 450
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 70
+          Max: 75
+        CriticalChance: 25
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    - Level: 10
+      Health: 500
+      Attacks:
+      - AnimationIndex: 0
+        Damage:
+          Min: 75
+          Max: 80
+        CriticalChance: 30
+        CriticalMultiplier: 3
+        VFXImpact: {fileID: 0}
+    LeaderBehavior: 1
+    PackBehavior: 1
+  - Name: Donkey
+    Preview: {fileID: 21300000, guid: a539986dfa6c69f4da71db84b6e1a05c, type: 3}
+    ID: 9
+    isWild: 0
+    ExpPerKill: 30
+    WildnessPerKill: 25
+    PackMaxCount:
+      Min: 1
+      Max: 9
+    Animals:
+    - {fileID: 2988662438970888458, guid: 0f3b7f269c14a8f4c8be8d7408fa1c88, type: 3}
+    Levels:
+    - Level: 1
+      Health: 50
+      Attacks: []
+    - Level: 2
+      Health: 100
+      Attacks: []
+    - Level: 3
+      Health: 150
+      Attacks: []
+    - Level: 4
+      Health: 200
+      Attacks: []
+    - Level: 5
+      Health: 225
+      Attacks: []
+    - Level: 6
+      Health: 250
+      Attacks: []
+    - Level: 7
+      Health: 275
+      Attacks: []
+    - Level: 8
+      Health: 300
+      Attacks: []
+    - Level: 9
+      Health: 325
+      Attacks: []
+    - Level: 10
+      Health: 350
+      Attacks: []
+    LeaderBehavior: 3
+    PackBehavior: 3
+  SurfaceTags: []
+  Player: {fileID: 8674580419197652302, guid: 0bcd6d5acaadc3f47b1b81d1ce0539d1, type: 3}
+  Levels:
+  - Name: LV.1
+    Level: 1
+    RequiredExp: 0
+    RequiredExpToNextLevel: 100
+    RewaredAttack: 10
+    RewaredDefence: 5
+    RewaredStatusPoints: 0
+    PlayerMaxHealth: 75
+    PlayerMaxStamina: 75
+    PackMaxCount: 0
+  - Name: LV.2
+    Level: 2
+    RequiredExp: 100
+    RequiredExpToNextLevel: 300
+    RewaredAttack: 13
+    RewaredDefence: 6
+    RewaredStatusPoints: 1
+    PlayerMaxHealth: 90
+    PlayerMaxStamina: 90
+    PackMaxCount: 1
+  - Name: LV.3
+    Level: 3
+    RequiredExp: 300
+    RequiredExpToNextLevel: 500
+    RewaredAttack: 16
+    RewaredDefence: 8
+    RewaredStatusPoints: 2
+    PlayerMaxHealth: 100
+    PlayerMaxStamina: 100
+    PackMaxCount: 3
+  - Name: LV.4
+    Level: 4
+    RequiredExp: 500
+    RequiredExpToNextLevel: 750
+    RewaredAttack: 18
+    RewaredDefence: 8
+    RewaredStatusPoints: 3
+    PlayerMaxHealth: 110
+    PlayerMaxStamina: 110
+    PackMaxCount: 4
+  - Name: LV.5
+    Level: 5
+    RequiredExp: 750
+    RequiredExpToNextLevel: 1000
+    RewaredAttack: 20
+    RewaredDefence: 9
+    RewaredStatusPoints: 3
+    PlayerMaxHealth: 120
+    PlayerMaxStamina: 120
+    PackMaxCount: 4
+  - Name: LV.6
+    Level: 6
+    RequiredExp: 1000
+    RequiredExpToNextLevel: 1250
+    RewaredAttack: 22
+    RewaredDefence: 9
+    RewaredStatusPoints: 3
+    PlayerMaxHealth: 130
+    PlayerMaxStamina: 130
+    PackMaxCount: 5
+  - Name: LV.7
+    Level: 7
+    RequiredExp: 1250
+    RequiredExpToNextLevel: 1600
+    RewaredAttack: 24
+    RewaredDefence: 10
+    RewaredStatusPoints: 3
+    PlayerMaxHealth: 140
+    PlayerMaxStamina: 140
+    PackMaxCount: 5
+  - Name: LV.8
+    Level: 8
+    RequiredExp: 1600
+    RequiredExpToNextLevel: 2000
+    RewaredAttack: 26
+    RewaredDefence: 10
+    RewaredStatusPoints: 3
+    PlayerMaxHealth: 150
+    PlayerMaxStamina: 150
+    PackMaxCount: 6
+  - Name: LV.9
+    Level: 9
+    RequiredExp: 2000
+    RequiredExpToNextLevel: 2400
+    RewaredAttack: 28
+    RewaredDefence: 10
+    RewaredStatusPoints: 3
+    PlayerMaxHealth: 160
+    PlayerMaxStamina: 160
+    PackMaxCount: 6
+  - Name: LV.10
+    Level: 10
+    RequiredExp: 2400
+    RequiredExpToNextLevel: 2800
+    RewaredAttack: 30
+    RewaredDefence: 15
+    RewaredStatusPoints: 4
+    PlayerMaxHealth: 200
+    PlayerMaxStamina: 200
+    PackMaxCount: 10
+  - Name: LV.11
+    Level: 11
+    RequiredExp: 2800
+    RequiredExpToNextLevel: 3200
+    RewaredAttack: 34
+    RewaredDefence: 16
+    RewaredStatusPoints: 4
+    PlayerMaxHealth: 210
+    PlayerMaxStamina: 210
+    PackMaxCount: 10
+  - Name: LV.12
+    Level: 12
+    RequiredExp: 3200
+    RequiredExpToNextLevel: 3600
+    RewaredAttack: 36
+    RewaredDefence: 16
+    RewaredStatusPoints: 4
+    PlayerMaxHealth: 220
+    PlayerMaxStamina: 220
+    PackMaxCount: 12
+  - Name: LV.13
+    Level: 13
+    RequiredExp: 3600
+    RequiredExpToNextLevel: 4000
+    RewaredAttack: 38
+    RewaredDefence: 16
+    RewaredStatusPoints: 4
+    PlayerMaxHealth: 230
+    PlayerMaxStamina: 230
+    PackMaxCount: 12
+  - Name: LV.14
+    Level: 14
+    RequiredExp: 4000
+    RequiredExpToNextLevel: 4500
+    RewaredAttack: 40
+    RewaredDefence: 16
+    RewaredStatusPoints: 4
+    PlayerMaxHealth: 240
+    PlayerMaxStamina: 240
+    PackMaxCount: 12
+  - Name: LV.15
+    Level: 15
+    RequiredExp: 4500
+    RequiredExpToNextLevel: 5000
+    RewaredAttack: 42
+    RewaredDefence: 20
+    RewaredStatusPoints: 5
+    PlayerMaxHealth: 260
+    PlayerMaxStamina: 260
+    PackMaxCount: 15
+  - Name: LV.16
+    Level: 16
+    RequiredExp: 5000
+    RequiredExpToNextLevel: 5500
+    RewaredAttack: 44
+    RewaredDefence: 20
+    RewaredStatusPoints: 5
+    PlayerMaxHealth: 280
+    PlayerMaxStamina: 280
+    PackMaxCount: 15
+  - Name: LV.17
+    Level: 17
+    RequiredExp: 5500
+    RequiredExpToNextLevel: 6000
+    RewaredAttack: 46
+    RewaredDefence: 20
+    RewaredStatusPoints: 5
+    PlayerMaxHealth: 300
+    PlayerMaxStamina: 300
+    PackMaxCount: 16
+  - Name: LV.18
+    Level: 18
+    RequiredExp: 6000
+    RequiredExpToNextLevel: 6500
+    RewaredAttack: 48
+    RewaredDefence: 20
+    RewaredStatusPoints: 6
+    PlayerMaxHealth: 320
+    PlayerMaxStamina: 320
+    PackMaxCount: 16
+  - Name: LV.19
+    Level: 19
+    RequiredExp: 6500
+    RequiredExpToNextLevel: 7000
+    RewaredAttack: 50
+    RewaredDefence: 20
+    RewaredStatusPoints: 6
+    PlayerMaxHealth: 340
+    PlayerMaxStamina: 340
+    PackMaxCount: 16
+  - Name: LV.20
+    Level: 20
+    RequiredExp: 7000
+    RequiredExpToNextLevel: 8000
+    RewaredAttack: 60
+    RewaredDefence: 25
+    RewaredStatusPoints: 8
+    PlayerMaxHealth: 400
+    PlayerMaxStamina: 400
+    PackMaxCount: 20
+  - Name: LV.21
+    Level: 21
+    RequiredExp: 8000
+    RequiredExpToNextLevel: 9000
+    RewaredAttack: 65
+    RewaredDefence: 25
+    RewaredStatusPoints: 8
+    PlayerMaxHealth: 420
+    PlayerMaxStamina: 420
+    PackMaxCount: 20
+  - Name: LV.22
+    Level: 22
+    RequiredExp: 9000
+    RequiredExpToNextLevel: 10000
+    RewaredAttack: 70
+    RewaredDefence: 25
+    RewaredStatusPoints: 8
+    PlayerMaxHealth: 440
+    PlayerMaxStamina: 440
+    PackMaxCount: 20
+  - Name: LV.23
+    Level: 23
+    RequiredExp: 10000
+    RequiredExpToNextLevel: 12000
+    RewaredAttack: 75
+    RewaredDefence: 25
+    RewaredStatusPoints: 8
+    PlayerMaxHealth: 460
+    PlayerMaxStamina: 460
+    PackMaxCount: 20
+  - Name: LV.24
+    Level: 24
+    RequiredExp: 12000
+    RequiredExpToNextLevel: 15000
+    RewaredAttack: 80
+    RewaredDefence: 25
+    RewaredStatusPoints: 8
+    PlayerMaxHealth: 480
+    PlayerMaxStamina: 480
+    PackMaxCount: 20
+  - Name: LV.25
+    Level: 25
+    RequiredExp: 15000
+    RequiredExpToNextLevel: 999999
+    RewaredAttack: 90
+    RewaredDefence: 20
+    RewaredStatusPoints: 10
+    PlayerMaxHealth: 500
+    PlayerMaxStamina: 500
+    PackMaxCount: 25
+  PackLevels:
+  - Level: 1
+    Health: 50
+    Attack:
+      Min: 20
+      Max: 30
+    CriticalChance: 10
+    CriticalMultiplier: 3
+    RequiredExp: 0
+    RequiredExpToNextLevel: 1500
+  - Level: 2
+    Health: 100
+    Attack:
+      Min: 30
+      Max: 40
+    CriticalChance: 5
+    CriticalMultiplier: 2
+    RequiredExp: 1500
+    RequiredExpToNextLevel: 3000
+  - Level: 3
+    Health: 150
+    Attack:
+      Min: 40
+      Max: 45
+    CriticalChance: 6
+    CriticalMultiplier: 2
+    RequiredExp: 3000
+    RequiredExpToNextLevel: 4000
+  - Level: 4
+    Health: 200
+    Attack:
+      Min: 45
+      Max: 50
+    CriticalChance: 7
+    CriticalMultiplier: 2
+    RequiredExp: 4000
+    RequiredExpToNextLevel: 5000
+  - Level: 5
+    Health: 250
+    Attack:
+      Min: 50
+      Max: 55
+    CriticalChance: 8
+    CriticalMultiplier: 2
+    RequiredExp: 5000
+    RequiredExpToNextLevel: 6500
+  - Level: 6
+    Health: 300
+    Attack:
+      Min: 55
+      Max: 60
+    CriticalChance: 10
+    CriticalMultiplier: 2.5
+    RequiredExp: 6500
+    RequiredExpToNextLevel: 7500
+  - Level: 7
+    Health: 350
+    Attack:
+      Min: 60
+      Max: 65
+    CriticalChance: 15
+    CriticalMultiplier: 2.5
+    RequiredExp: 7500
+    RequiredExpToNextLevel: 10000
+  - Level: 8
+    Health: 400
+    Attack:
+      Min: 65
+      Max: 70
+    CriticalChance: 20
+    CriticalMultiplier: 3
+    RequiredExp: 10000
+    RequiredExpToNextLevel: 12500
+  - Level: 9
+    Health: 450
+    Attack:
+      Min: 70
+      Max: 75
+    CriticalChance: 25
+    CriticalMultiplier: 3
+    RequiredExp: 12500
+    RequiredExpToNextLevel: 15000
+  - Level: 10
+    Health: 500
+    Attack:
+      Min: 75
+      Max: 80
+    CriticalChance: 30
+    CriticalMultiplier: 3
+    RequiredExp: 15000
+    RequiredExpToNextLevel: 99999
